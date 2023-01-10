@@ -1,0 +1,22 @@
+#pragma once
+#include "tree.h"
+
+using namespace std;
+
+class BinarySearchTree: public BinaryTree {
+public:
+    BinarySearchTree() { };
+    ~BinarySearchTree() { };
+
+    int insertion(int key);
+    int deletion(int key);
+
+private:
+    /////////////////////////////////////////////////////////
+    //////  TODO: Add private members if required ///////////
+    void searchExist(Node *node, int key_val);
+    void inserting(Node *node, int key_val);
+    void snrs(Node *node);
+    ///////////      End of Implementation      /////////////
+    /////////////////////////////////////////////////////////
+};
